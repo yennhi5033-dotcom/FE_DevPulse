@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#0f131c","on-secondary-container":"#b0b2ff","secondary-container":"#3131c0","primary-fixed-dim":"#00dce6","on-primary-container":"#006a70","surface-dim":"#0f131c","tertiary-fixed":"#6ffbbe","surface-container":"#1c1f29","surface-container-low":"#181b25","tertiary":"#e1ffec","secondary-fixed":"#e1e0ff","on-surface-variant":"#b9cacb","outline-variant":"#3a494b","on-secondary":"#1000a9","secondary":"#c0c1ff","tertiary-container":"#67f4b7","on-secondary-fixed-variant":"#2f2ebe","inverse-surface":"#dfe2ef","on-error":"#690005","surface-tint":"#00dce6","on-secondary-fixed":"#07006c","surface":"#0f131c","inverse-primary":"#00696f","on-tertiary-container":"#006e4b","primary-fixed":"#6ff6ff","inverse-on-surface":"#2c303a","surface-variant":"#31353f","surface-bright":"#353943","surface-container-highest":"#31353f","on-tertiary-fixed-variant":"#005236","on-primary":"#00373a","on-tertiary-fixed":"#002113","error":"#ffb4ab","on-primary-fixed-variant":"#004f53","secondary-fixed-dim":"#c0c1ff","on-primary-fixed":"#002022","on-tertiary":"#003824","tertiary-fixed-dim":"#4edea3","surface-container-high":"#262a34","surface-container-lowest":"#0a0e17","primary":"#e0fdff","error-container":"#93000a","outline":"#849495","on-surface":"#dfe2ef","on-error-container":"#ffdad6","on-background":"#dfe2ef","primary-container":"#00f2fe"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1rem","margin-desktop":"2.5rem","space-md":"0.75rem","space-sm":"0.5rem","space-xl":"1.5rem","gutter-desktop":"1.5rem","space-lg":"1rem","space-2xs":"0.125rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-2xl":"2rem","gutter":"1rem","space-3xl":"3rem"},"fontFamily":{"headline-lg-mobile":["Geist"],"label-caps":["JetBrains Mono"],"headline-lg":["Geist"],"code-sm":["JetBrains Mono"],"body-md":["Geist"],"kbd-shortcut":["JetBrains Mono"],"body-sm":["Geist"],"headline-sm":["Geist"],"display-hero":["Geist"],"headline-md":["Geist"],"code-md":["JetBrains Mono"],"display-hero-mobile":["Geist"],"body-lg":["Geist"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"600"}],"code-sm":["11px",{"lineHeight":"14px","letterSpacing":"0em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"kbd-shortcut":["10px",{"lineHeight":"12px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"code-md":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface-container-lowest text-on-surface selection:bg-primary-container selection:text-on-primary-fixed min-h-screen relative overflow-x-hidden"><div class="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-80 bg-gradient-to-b from-primary-container/10 via-secondary-container/5 to-transparent blur-3xl -z-10"></div><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-7xl mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 rounded-full bg-primary-container/20 blur-sm animate-pulse"></div><img alt="DevPulse Logo" class="h-8 w-auto object-contain relative z-10" src="https://lh3.googleusercontent.com/aida/AEtjO1Ukhdtp-wsS4Lx6Iu4XB6xqUSbKICr50mjP8DD3EoustotuwOptAC4QYDyPS7IXzyZhmGblgxOsG_ZGMhJo18Jfsj5ycD8l0u_kNK4XjNJrzMCnt_JtQ2b7x2C17LprUHEzDn9KaGmnrEPw4vo9xwnKm0ePDgUBjp337Fo1TgIEqI3Ff0l8quOx4FG30AfdyuDUEBGpcUODmTLsPr0aaz_cpFlf_38bQV2vPq1rrfslTy3UgOPSGT3SoQ"/></div><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">DevPulse</span><span class="font-code-sm text-code-sm uppercase px-space-xs py-space-2xs rounded bg-surface-container-high text-primary-fixed-dim border border-outline-variant/30">v1.0 Beta</span></div></div><div class="flex-1 max-w-xl hidden md:flex items-center"><button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low/90 text-on-surface-variant hover:text-on-surface transition-all group shadow-[0_0_12px_rgba(0,0,0,0.2)]" type="button"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">search</span><span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Quick find resources... (⌘K or Ctrl+K)</span></div><kbd class="font-kbd-shortcut text-kbd-shortcut px-space-xs py-space-2xs rounded bg-surface-container-highest text-on-surface-variant shadow-inner">⌘K</kbd></button></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-outline-variant text-[18px]">code</span><span class="font-code-sm text-code-sm">⭐ 1.4k</span></a><button aria-label="Toggle theme" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">dark_mode</span></button><button class="hidden lg:flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-gradient-to-r from-secondary-container to-primary-container text-on-surface font-headline-sm text-body-sm shadow-[0_0_20px_-4px_rgba(0,242,254,0.3)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Add Resource</span></button><div class="relative flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4i5oqxfvafWN06txd2SfW4VI_uMbq7Ollh7lStz8Jm0E-3uhz6H_Fy_RfJpEru9B1QAPJ2ivKXe8FwEZXkMT7h-qfZSksTd6KNezhQR7Yj1XqI1RikpDPbcpS0Z4Sw6g5NNKm3J6mIYwm7qtr3dUWvRAFtIjSiftT-VDtgjHly6pXMEKPM4OcYQxCFZpKBuazPWjUoJLfsD2agxG50OYpZHNmcy1WqgqCbQ_kxWb9hqxjL7G9A8bd"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(103,244,183,0.8)]"></span></div></div></div><div class="w-full bg-surface-container-lowest/60 backdrop-blur-md"><div class="w-full max-w-7xl mx-auto px-margin md:px-margin-desktop h-10 flex items-center justify-between text-on-surface-variant"><nav class="flex items-center gap-space-sm overflow-x-auto" data-active-classes="bg-surface-container-high text-primary font-code-sm rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-surface-container-high text-primary font-code-sm rounded" data-path="directory" href="#">All Directory</a><a class="font-code-sm text-code-sm px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="developer-tools" href="#">Developer Tools</a><a class="font-code-sm text-code-sm px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="ui-libraries" href="#">UI Libraries</a><a class="font-code-sm text-code-sm px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="apis-and-backend" href="#">APIs &amp; Backend</a><a class="font-code-sm text-code-sm px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="curated-stacks" href="#">Curated Stacks</a></nav><div class="hidden sm:flex items-center gap-space-xs font-code-sm text-code-sm text-outline"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-ping"></span><span>Telemetry Live</span></div></div></div></header><main class="w-full pt-26 bg-surface-container-lowest min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full relative">
+<!-- Blurred Dashboard Substrate Behind Modal -->
+<div class="w-full max-w-7xl mx-auto px-margin md:px-margin-desktop select-none pointer-events-none filter blur-md opacity-40 transition-all duration-300">
+<div class="flex items-center justify-between py-space-md mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface">Resource Catalog</span>
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs rounded bg-surface-container-high text-primary-fixed-dim">1,842 indexed</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="h-9 w-64 rounded-xl bg-surface-container-high"></div>
+<div class="h-9 w-28 rounded-xl bg-surface-container-high"></div>
+</div>
+</div>
+<!-- Mocked Background Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-2xl">
+<div class="bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-6 h-6 rounded bg-surface-container-highest"></div>
+<div class="h-4 w-28 bg-surface-container-highest rounded"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">★ 22.4k</span>
+</div>
+<div class="h-10 bg-surface-container-low rounded w-full mt-space-xs"></div>
+<div class="flex items-center gap-space-xs mt-space-sm">
+<span class="w-14 h-4 rounded bg-surface-container-high"></span>
+<span class="w-12 h-4 rounded bg-surface-container-high"></span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-6 h-6 rounded bg-surface-container-highest"></div>
+<div class="h-4 w-36 bg-surface-container-highest rounded"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">★ 18.9k</span>
+</div>
+<div class="h-10 bg-surface-container-low rounded w-full mt-space-xs"></div>
+<div class="flex items-center gap-space-xs mt-space-sm">
+<span class="w-16 h-4 rounded bg-surface-container-high"></span>
+<span class="w-14 h-4 rounded bg-surface-container-high"></span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-6 h-6 rounded bg-surface-container-highest"></div>
+<div class="h-4 w-32 bg-surface-container-highest rounded"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">★ 41.2k</span>
+</div>
+<div class="h-10 bg-surface-container-low rounded w-full mt-space-xs"></div>
+<div class="flex items-center gap-space-xs mt-space-sm">
+<span class="w-20 h-4 rounded bg-surface-container-high"></span>
+<span class="w-10 h-4 rounded bg-surface-container-high"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dimmed Glassmorphic Modal Backdrop -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center p-space-margin md:p-space-xl overflow-y-auto" id="modal-overlay">
+<!-- Modal Card Container -->
+<div class="relative w-full max-w-2xl bg-surface rounded-full shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7)] p-space-xl flex flex-col gap-space-xl my-auto transition-transform duration-200">
+<!-- Modal Top Glow Decoration -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-r from-primary-container/20 via-secondary-container/20 to-primary-container/20 blur-2xl pointer-events-none"></div>
+<!-- Modal Header -->
+<div class="flex items-start justify-between gap-space-md relative">
+<div class="flex items-center gap-space-md">
+<!-- Pulse Cyan Icon Badge -->
+<div class="relative flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high shadow-[0_0_16px_rgba(0,242,254,0.15)] shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[24px]">bookmark_add</span>
+<span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f2fe] animate-ping"></span>
+<span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface" id="modal-heading-text">Add New Resource</h2>
+<!-- Edit/Create Toggle Pill -->
+<button class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" id="mode-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span class="font-label-caps text-label-caps uppercase text-primary-fixed-dim" id="mode-badge-label">Create Mode</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+              Share a valuable library, tool, or engineering article with the DevPulse community.
+            </p>
+</div>
+</div>
+<!-- Close Button -->
+<button aria-label="Close dialog" class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors shadow-sm" id="close-modal-trigger" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Core -->
+<form class="flex flex-col gap-space-lg" id="resource-form" onsubmit="event.preventDefault();">
+<!-- Field 1: Title -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-body-md text-on-surface flex items-center gap-space-2xs" for="resource-title">
+              Title <span class="text-primary-container">*</span>
+</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="title-char-counter">24 / 100 chars</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full px-space-md py-space-sm bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container shadow-inner transition-all" id="resource-title" maxlength="100" name="title" placeholder="e.g., v0 by Vercel" type="text" value="v0 by Vercel"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clear and recognizable name of the tool, framework, or utility.</p>
+</div>
+<!-- Field 2: Target URL & Live Favicon Badge -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-body-md text-on-surface flex items-center gap-space-2xs" for="resource-url">
+              URL <span class="text-primary-container">*</span>
+</label>
+<span class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-tertiary-container/15 text-tertiary font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Valid URL &amp; Reachable</span>
+</span>
+</div>
+<div class="relative flex items-center bg-surface-container-low rounded-xl shadow-inner px-space-sm">
+<div class="flex items-center gap-space-xs shrink-0 pl-space-xs">
+<span class="material-symbols-outlined text-outline-variant text-[18px]">public</span>
+<!-- Live Mock Favicon Badge -->
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<span class="font-code-sm text-kbd-shortcut font-bold text-on-surface">v0</span>
+</div>
+</div>
+<input class="w-full px-space-sm py-space-sm bg-transparent text-on-surface font-code-md text-code-md placeholder:text-outline focus:outline-none" id="resource-url" name="url" placeholder="https://example.com" type="url" value="https://v0.dev"/>
+<button class="shrink-0 p-space-2xs rounded text-outline-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Inspect Header Link" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Field 3: Category Selector & Field 4: Custom Tags Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-start">
+<!-- Category Select -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-headline-sm text-body-md text-on-surface flex items-center gap-space-2xs" for="resource-category">
+              Category <span class="text-primary-container">*</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none px-space-md py-space-sm bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all cursor-pointer" id="resource-category">
+<option value="frontend">Frontend</option>
+<option value="backend">Backend</option>
+<option value="devops">DevOps</option>
+<option selected="" value="ai">AI &amp; Machine Learning</option>
+<option value="mobile">Mobile</option>
+<option value="design">UI/UX &amp; Assets</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">
+                expand_more
+              </span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_rgba(192,193,255,0.6)]"></span>
+<span class="font-code-sm text-code-sm text-on-secondary-container">Filtered under: AI Tag Group</span>
+</div>
+</div>
+<!-- Tags Container -->
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-body-md text-on-surface">Tags</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="tags-counter">4 of 5 used</span>
+</div>
+<!-- Tag Editor Area -->
+<div class="min-h-[44px] p-space-xs bg-surface-container-low rounded-xl flex flex-wrap items-center gap-space-xs shadow-inner">
+<!-- Interactive Tag Chip 1 -->
+<span class="tag-chip inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-container-high text-primary-fixed font-code-sm text-code-sm shadow-sm">
+<span>#ai</span>
+<button class="hover:text-error transition-colors flex items-center" onclick="this.parentElement.remove(); checkTagsCount();" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Interactive Tag Chip 2 -->
+<span class="tag-chip inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-container-high text-primary-fixed font-code-sm text-code-sm shadow-sm">
+<span>#generative-ui</span>
+<button class="hover:text-error transition-colors flex items-center" onclick="this.parentElement.remove(); checkTagsCount();" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Interactive Tag Chip 3 -->
+<span class="tag-chip inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-container-high text-primary-fixed font-code-sm text-code-sm shadow-sm">
+<span>#nextjs</span>
+<button class="hover:text-error transition-colors flex items-center" onclick="this.parentElement.remove(); checkTagsCount();" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Interactive Tag Chip 4 -->
+<span class="tag-chip inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-container-high text-primary-fixed font-code-sm text-code-sm shadow-sm">
+<span>#react</span>
+<button class="hover:text-error transition-colors flex items-center" onclick="this.parentElement.remove(); checkTagsCount();" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Tag Input Placeholder -->
+<input class="bg-transparent font-code-sm text-code-sm text-on-surface placeholder:text-outline focus:outline-none px-space-xs py-space-2xs flex-1 min-w-[90px]" id="tag-input-field" placeholder="Add tag..." type="text"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Press <kbd class="font-kbd-shortcut text-kbd-shortcut px-space-2xs rounded bg-surface-container-high text-on-surface-variant">Enter</kbd> or comma to append tag.</p>
+</div>
+</div>
+<!-- Field 5: Summary / Description -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-body-md text-on-surface flex items-center gap-space-2xs" for="resource-summary">
+              Summary <span class="text-primary-container">*</span>
+</label>
+<span class="font-code-sm text-code-sm text-tertiary" id="summary-char-counter">112 / 300 characters</span>
+</div>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container shadow-inner resize-none transition-all" id="resource-summary" maxlength="300" rows="3">An AI-powered design-to-code tool that uses natural language to build production-grade React components in seconds.</textarea>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Succinct preview shown in directory tiles &amp; search index.</span>
+<span class="font-code-sm text-code-sm text-outline">Markdown supported</span>
+</div>
+</div>
+<!-- Danger Zone Collapsible Drawer (Edit Mode Feature) -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm" id="danger-zone-container">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-headline-sm text-body-md font-semibold">Danger Zone</span>
+</div>
+<button class="font-code-sm text-code-sm text-on-surface-variant hover:text-error transition-colors" id="toggle-danger-zone-btn" type="button">
+              Show Options
+            </button>
+</div>
+<div class="hidden flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md pt-space-xs" id="danger-zone-actions">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Permanently purge this item and telemetry history from the DevPulse directory index.
+            </p>
+<button class="px-space-md py-space-xs rounded-lg bg-error-container text-on-error hover:opacity-90 transition-opacity font-headline-sm text-body-sm whitespace-nowrap flex items-center gap-space-2xs" id="delete-resource-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_forever</span>
+<span>Delete Resource</span>
+</button>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm">
+<!-- API Telemetry Live State indicator -->
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(103,244,183,0.8)] animate-pulse"></span>
+<span class="text-on-surface">Payload Route:</span>
+<code class="px-space-xs py-space-2xs rounded bg-surface-container-high text-primary-fixed-dim">POST /api/resources</code>
+</div>
+<!-- Buttons -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-lg py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm text-body-md transition-colors" id="cancel-btn" type="button">
+              Cancel
+            </button>
+<button class="flex items-center gap-space-xs px-space-xl py-space-sm rounded-xl bg-primary-container text-on-primary font-headline-sm text-body-md shadow-[0_0_24px_rgba(0,242,254,0.35)] hover:opacity-95 active:scale-[0.98] transition-all" id="submit-resource-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span id="submit-btn-text">Add Resource</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- Delete Confirmation Overlay Sub-Modal (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-lg flex items-center justify-center p-space-margin" id="delete-dialog">
+<div class="w-full max-w-md bg-surface-container rounded-2xl shadow-[0_25px_60px_-15px_rgba(147,0,10,0.4)] p-space-xl flex flex-col gap-space-lg animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center gap-space-md text-error">
+<div class="w-10 h-10 rounded-full bg-error-container/30 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">delete_sweep</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Delete Resource</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Are you sure you want to remove this record?</p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest font-code-sm text-code-sm text-on-surface-variant">
+        Target: <span class="text-primary-fixed-dim">https://v0.dev</span> (v0 by Vercel)
+      </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        This action cannot be undone. Any community upvotes and stack associations will be immediately disconnected.
+      </p>
+<div class="flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface font-headline-sm text-body-sm hover:bg-surface-container-highest transition-colors" id="cancel-delete-btn" type="button">
+          Nevermind
+        </button>
+<button class="px-space-md py-space-sm rounded-xl bg-error text-on-error font-headline-sm text-body-sm shadow-[0_0_16px_rgba(255,180,171,0.4)] hover:opacity-90 transition-opacity" id="confirm-delete-btn" type="button">
+          Confirm Deletion
+        </button>
+</div>
+</div>
+</div>
+<!-- Sonner / React Hot Toast Style Active Notification (Bottom-Right) -->
+<div class="fixed bottom-space-xl right-space-xl z-50 max-w-sm w-full bg-surface-container-highest rounded-xl shadow-[0_12px_32px_rgba(0,0,0,0.5)] p-space-md flex items-center justify-between gap-space-md transition-all duration-300" id="toast-notification">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/20 text-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-headline-sm text-body-md text-on-surface truncate">Resource created successfully! 🎉</p>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Synced to devpulse.db</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-sm py-space-2xs rounded bg-surface-container text-primary-fixed-dim hover:text-primary font-code-sm text-code-sm transition-colors" id="undo-toast-btn" type="button">
+        Undo
+      </button>
+<button class="p-space-2xs rounded text-outline hover:text-on-surface transition-colors flex items-center" onclick="document.getElementById('toast-notification').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Embedded Interactive Script for Modal Micro-Interactions -->
+<script>
+    (function() {
+      const summaryInput = document.getElementById('resource-summary');
+      const summaryCounter = document.getElementById('summary-char-counter');
+      const titleInput = document.getElementById('resource-title');
+      const titleCounter = document.getElementById('title-char-counter');
+      const tagInputField = document.getElementById('tag-input-field');
+      const tagContainer = tagInputField ? tagInputField.parentElement : null;
+      const tagsCounter = document.getElementById('tags-counter');
+      const modeToggleBtn = document.getElementById('mode-toggle-btn');
+      const modeBadgeLabel = document.getElementById('mode-badge-label');
+      const modalHeadingText = document.getElementById('modal-heading-text');
+      const submitBtnText = document.getElementById('submit-btn-text');
+      const dangerToggle = document.getElementById('toggle-danger-zone-btn');
+      const dangerActions = document.getElementById('danger-zone-actions');
+      const deleteModal = document.getElementById('delete-dialog');
+      const deleteBtn = document.getElementById('delete-resource-btn');
+      const cancelDeleteBtn = document.getElementById('cancel-delete-btn');
+      const confirmDeleteBtn = document.getElementById('confirm-delete-btn');
+      const toast = document.getElementById('toast-notification');
+      const submitResourceBtn = document.getElementById('submit-resource-btn');
+
+      // Summary Character Counter
+      if (summaryInput && summaryCounter) {
+        summaryInput.addEventListener('input', function() {
+          const len = this.value.length;
+          summaryCounter.textContent = `${len} / 300 characters`;
+          if (len > 260) {
+            summaryCounter.className = 'font-code-sm text-code-sm text-error';
+          } else {
+            summaryCounter.className = 'font-code-sm text-code-sm text-tertiary';
+          }
+        });
+      }
+
+      // Title Character Counter
+      if (titleInput && titleCounter) {
+        titleInput.addEventListener('input', function() {
+          const len = this.value.length;
+          titleCounter.textContent = `${len} / 100 chars`;
+        });
+      }
+
+      // Helper function for Tag counting
+      window.checkTagsCount = function() {
+        if (!tagContainer || !tagsCounter) return;
+        const chips = tagContainer.querySelectorAll('.tag-chip');
+        tagsCounter.textContent = `${chips.length} of 5 used`;
+      };
+
+      // Add tag interaction on Enter / Comma
+      if (tagInputField && tagContainer) {
+        tagInputField.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ',') {
+            e.preventDefault();
+            const val = this.value.trim().replace(/^#/, '').toLowerCase();
+            const currentChips = tagContainer.querySelectorAll('.tag-chip');
+            if (val && currentChips.length < 5) {
+              const chip = document.createElement('span');
+              chip.className = 'tag-chip inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-container-high text-primary-fixed font-code-sm text-code-sm shadow-sm';
+              chip.innerHTML = `<span>#${val}</span><button type="button" onclick="this.parentElement.remove(); window.checkTagsCount();" class="hover:text-error transition-colors flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>`;
+              tagContainer.insertBefore(chip, tagInputField);
+              this.value = '';
+              window.checkTagsCount();
+            }
+          }
+        });
+      }
+
+      // Mode Toggle: Add Mode <-> Edit Mode
+      let isEditMode = false;
+      if (modeToggleBtn && modeBadgeLabel && modalHeadingText && submitBtnText) {
+        modeToggleBtn.addEventListener('click', function() {
+          isEditMode = !isEditMode;
+          if (isEditMode) {
+            modeBadgeLabel.textContent = 'Edit Mode';
+            modalHeadingText.textContent = 'Edit Resource';
+            submitBtnText.textContent = 'Save Changes';
+            dangerActions.classList.remove('hidden');
+            dangerActions.classList.add('flex');
+            dangerToggle.textContent = 'Hide Options';
+          } else {
+            modeBadgeLabel.textContent = 'Create Mode';
+            modalHeadingText.textContent = 'Add New Resource';
+            submitBtnText.textContent = 'Add Resource';
+            dangerActions.classList.add('hidden');
+            dangerActions.classList.remove('flex');
+            dangerToggle.textContent = 'Show Options';
+          }
+        });
+      }
+
+      // Danger Zone Toggle
+      if (dangerToggle && dangerActions) {
+        dangerToggle.addEventListener('click', function() {
+          if (dangerActions.classList.contains('hidden')) {
+            dangerActions.classList.remove('hidden');
+            dangerActions.classList.add('flex');
+            dangerToggle.textContent = 'Hide Options';
+          } else {
+            dangerActions.classList.add('hidden');
+            dangerActions.classList.remove('flex');
+            dangerToggle.textContent = 'Show Options';
+          }
+        });
+      }
+
+      // Delete Dialog Interactivity
+      if (deleteBtn && deleteModal) {
+        deleteBtn.addEventListener('click', function() {
+          deleteModal.classList.remove('hidden');
+        });
+      }
+
+      if (cancelDeleteBtn && deleteModal) {
+        cancelDeleteBtn.addEventListener('click', function() {
+          deleteModal.classList.add('hidden');
+        });
+      }
+
+      if (confirmDeleteBtn && deleteModal && toast) {
+        confirmDeleteBtn.addEventListener('click', function() {
+          deleteModal.classList.add('hidden');
+          toast.querySelector('p').textContent = 'Resource deleted from directory.';
+          toast.classList.remove('hidden');
+          setTimeout(() => toast.classList.add('hidden'), 5000);
+        });
+      }
+
+      // Submit form triggers Toast
+      if (submitResourceBtn && toast) {
+        submitResourceBtn.addEventListener('click', function() {
+          toast.querySelector('p').textContent = isEditMode ? 'Resource updated successfully! ✨' : 'Resource created successfully! 🎉';
+          toast.classList.remove('hidden');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-2xl mt-space-3xl shadow-[0_-1px_12px_rgba(0,0,0,0.2)]"><div class="w-full max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-wrap items-center justify-center md:justify-start gap-space-lg font-code-sm text-code-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="api-docs" href="#">API Docs</a><a class="hover:text-on-surface transition-colors" data-path="chrome-extension" href="#">Chrome Extension</a><a class="hover:text-on-surface transition-colors" data-path="submit-cli" href="#">Submit via CLI</a><a class="hover:text-on-surface transition-colors" data-path="community" href="#">Community Discord</a></div><div class="flex items-center gap-space-sm px-space-md py-space-xs rounded bg-surface-container-low font-code-sm text-code-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(103,244,183,0.8)]"></span><span class="text-on-surface">API:</span><span class="text-outline">localhost:3001 healthy</span></div></div></footer></body></html>

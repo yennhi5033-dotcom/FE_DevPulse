@@ -1,0 +1,51 @@
+﻿@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-geist: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-geist);
+    background-color: #0b0f17;
+    color: #e2e8f0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f131c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232a3b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333d54;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(15, 19, 28, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: rgba(18, 24, 38, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card:hover {
+  background: rgba(23, 31, 48, 0.85);
+  border-color: rgba(0, 242, 254, 0.25);
+}
